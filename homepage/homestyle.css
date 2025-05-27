@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'VALORANT';
+    src: url('../../fonts/VALORANT-Regular.woff2') format('woff2'),
+        url('../fonts/VALORANT-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'UniSansHeavy';
+    src: url('../fonts/UniSansHeavyCAPS.woff2') format('woff2'),
+        url('../fonts/UniSansHeavyCAPS.woff') format('woff');
+    font-weight: Normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* HEader */
+.logocontainer{
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    color:black;
+    height: 45px;
+    width:170px;
+    gap: 8px;
+    font-size: 1.5em;
+    white-space: nowrap; /* prevents wrap from unsw and riotsoc */
+}
+.logo {
+    width: 45px;
+}
+
+.insta{
+    border: solid red 2px;
+}
+.nav-bar-links a:hover{
+    color: rgb(52, 59, 61);
+    text-shadow: 2px 2px 2px grey;
+    transition: all 0.2s;
+}
+
+.nav-bar-style{
+    background-color: #D7D9DB;
+    font-family: 'UniSansHeavy',sans-serif;
+}
+
+/* Drop down hover only on devices that aren't touch based */
+@media (hover: hover) and (pointer: fine) {
+    .navbar .dropdown:hover .dropdown-menu,
+    .navbar .dropdown-menu:hover {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  
+    .dropdown-menu {
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      margin-top: 0.125rem; /* default padding to match with bootstrap given */
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+}
+
+/* footer */
+
+footer {
+    text-align: center;
+    font-size: 0.5em;
+}
+.social-links-container {
+    padding-bottom: 1rem;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    
+}
+.sociallinks img{ /*sets size of the social media logos*/
+    padding: 0px 20px;
+    height: 40px;
+    flex: 1;
+}
+/* background */
+
+.rotated-bg {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 120%;
+    height: 450%;
+    transform: translate(-50%, -50%) rotate(65deg);
+    z-index: -1;
+}
+.streaks {
+    background: url('../Images/streaks.png') repeat;
+    background-size: 45% 200%;
+}
+.whitedots {
+    background: url('../Images/whitedots.png') repeat;
+    top: 30%;
+    background-size: 55% 200%;
+}
+.reddots {
+    background: url('../Images/reddots.png') repeat;
+    background-size: 100% 200%;
+}
+
+.side-img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+}
+.side-img-right {
+  height: 110%;
+  transform: translate(-50%, -35%) translateX(600px); 
+}
+.side-img-left {
+  height: 90%;
+  transform: translate(-50%, -35%) translateX(-780px); 
+}
+@media (max-width: 1200px) {
+  .side-img {
+    display:none;
+  }
+}
+
+
+
+/* Frosted glass container */
+.content-container {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    color: #fff;
+    transition: max-width 0.3s ease;
+}
+
+.intro-img {
+  background: url('../Images/front_img.jpg');
+  border-radius: 16px;
+  position: relative;
+  margin: -2rem;
+  background-size: cover;
+  height: 75vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+.intro-text {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  color: white;
+}
+
+.intro-text h2{
+  font-size: 4rem;
+}
+
+/* Full width on small screens */
+@media (max-width: 900px) {
+    .content-container {
+        max-width: 100%;
+        border-radius: 0;
+        margin: 0;
+    }
+}
+
+
+
+body {
+  background-color:#0F1923;
+  color: white;
+  font-family: 'VALORANT', sans-serif;
+}
+
+
+/* BODY CONTENT */
+#joinsection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 1.5em;
+}
+
+#discordcalltoaction {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-basis:30%;
+  text-align: right;
+  justify-content: flex-end;
+  align-items: flex-end;  
+  margin-left:auto;   /* Aligns bottom */
+}
+
+
+#FlipTextContainer {
+  flex-basis:70%;
+  min-width: 500px;
+  flex-shrink:1;
+  text-transform: uppercase;
+  font-size:2em;
+  font-weight:bold;
+  display:inline-block;
+  text-align: left;
+  white-space: nowrap;
+}
+
+ /* I have no clue how this flip thing aligns sorry to anyone trying to maintain */
+#flip {
+  height:2em;
+  overflow:hidden;
+}
+
+#flip .container1 {
+  color:#fff;
+  height:2em;
+  padding-left: 15%;
+  display: block;
+}
+
+#flip .scrolllogo{
+  height: 100%;
+  vertical-align: middle; 
+}
+
+#flip .game {
+  display: inline-block;
+  height: 100%;
+}
+#flip .title {
+  display: inline-block;
+  height: 100%;
+
+  font-size: 1.4em;
+  vertical-align: middle; 
+}
+
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+/* #flip div div {
+  background:#42c58a;
+}
+#flip div:first-child div {
+  background:#4ec7f3;
+}
+#flip div:last-child div {
+  background:#DC143C;
+}
+ */
+@keyframes show {
+  0% {margin-top:-6em;}
+  5% {margin-top:-4em;}
+  33% {margin-top:-4em;}
+  38% {margin-top:-2em;}
+  66% {margin-top:-2em;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-6em;}
+}
