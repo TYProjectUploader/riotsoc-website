@@ -1,0 +1,62 @@
+.side-img-left {
+    height: 30%;
+    transform: translate(-30%, -85%) translateX(-600px); 
+}
+.side-img-right {
+    height: 30%;
+    transform: translate(-90%, 30%) translateX(600px); 
+}
+
+@media (max-width: 1200px) {
+    .side-img {
+      display:none;
+    }
+}
+
+.divider-heading {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    gap: 0.5rem; /* space between lines and heading */
+  }
+  
+.divider-heading .line {
+    flex: 1;
+    height: 1px;
+    background-color: #ccc; /* line color */
+}
+
+.divider-heading h2 {
+    font-size: 2rem;
+    padding-top: 12px; /* goofy valorant font not centered */
+    white-space: wrap;
+}
+
+
+.faq {
+    width: 100%;
+    padding-bottom: 30px;
+}
+details {
+    font-family: DMSans; 
+    margin: 0.8rem;
+}
+
+.faq details {
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+}
+
+.faq summary {
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.faq p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}

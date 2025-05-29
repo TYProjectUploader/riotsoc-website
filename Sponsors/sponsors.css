@@ -1,0 +1,43 @@
+.divider-heading {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    gap: 0.5rem; /* space between lines and heading */
+  }
+  
+.divider-heading .line {
+flex: 1;
+height: 1px;
+background-color: #ccc; /* line color */
+}
+
+.divider-heading h2 {
+font-size: 2rem;
+padding-top: 12px; /* goofy valorant font not centered */
+white-space: nowrap;
+}
+
+.logo-flexbox {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+}
+
+.logo-box {
+flex-basis: 45%;
+border-radius: 16px;
+min-width: 300px;
+height: 130px;
+margin: 10px;
+
+display:flex;
+align-items: center;
+justify-content: center;
+}
+.logo-box img {
+width: 80%;
+height: 100%;
+object-fit: contain;
+}

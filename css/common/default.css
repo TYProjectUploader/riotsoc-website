@@ -1,0 +1,83 @@
+.side-img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+@media (max-width: 1200px) {
+    .side-img {
+      display:none;
+    }
+}
+
+/* background */
+.rotated-bg {
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    width: 120%;
+    height: 450%;
+    transform: translate(-50%, -50%) rotate(65deg);
+    z-index: -1;
+}
+.streaks {
+    background: url('../../Images/background/streaks.png') repeat;
+    background-size: 45% 200%;
+}
+.whitedots {
+    background: url('../../Images/background/whitedots.png') repeat;
+    top: 30%;
+    background-size: 55% 200%;
+}
+.reddots {
+    background: url('../../Images/background/reddots.png') repeat;
+    background-size: 100% 200%;
+}
+
+body {
+    background-color:#0F1923;
+    color: white;
+    font-family: 'VALORANT', sans-serif;
+}
+
+.divider-heading {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    gap: 0.5rem; /* space between lines and heading */
+  }
+  
+.divider-heading .line {
+flex: 1;
+height: 1px;
+background-color: #ccc; /* line color */
+}
+
+.divider-heading h2 {
+font-size: 2rem;
+padding-top: 12px; /* goofy valorant font not centered */
+white-space: nowrap;
+}
+
+/* Frosted glass container */
+.content-container {
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 900px;
+    background: rgba(0, 0, 0, 0.35);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    color: #fff;
+    transition: max-width 0.3s ease;
+}
+/* Full width on small screens */
+@media (max-width: 900px) {
+  .content-container {
+      max-width: 100%;
+      border-radius: 0;
+      margin: 0;
+  }
+}

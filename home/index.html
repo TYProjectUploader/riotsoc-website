@@ -12,12 +12,16 @@
 <!--         <meta name="description" content="Anime Unsw: Home of the largest active anime community in Sydney">
         <meta name="keywords" content="Anime, UNSW, Arc Clubs, Anime UNSW, AUNSW, Clubs"> -->
 
-        <!--DO NOT TOUCH OR ELSE FUCKS DISPLAy-->
+        <!--DO NOT TOUCH OR ELSE messes DISPLAy-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="homestyle.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="../css/common/header.css">
+        <link rel="stylesheet" href="../css/common/footer.css">
+        <link rel="stylesheet" href="../css/common/fonts.css">
+        <link rel="stylesheet" href="../css/common/default.css">
     </head>
     <!--use details for FAQ-->
 
@@ -29,14 +33,13 @@
         <header class="sticky-top">
             <nav class="navbar navbar-expand-lg nav-bar-style">
                 <div class="container-fluid">
-                    <a class="logocontainer" href="#">
+                    <a class="logocontainer">
                         <img class="logo" src="../Images/RiotsocLogo.svg">
                         RiotSoc UNSW
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
-                    <!--add active to indicate current page-->
                     <div class="collapse navbar-collapse nav-bar-links" id="navbarNavDropdown">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item dropdown">
@@ -44,27 +47,27 @@
                                 About us
                             </a>
                             <ul class="dropdown-menu nav-bar-style">
-                                <li><a class="dropdown-item" href="#">Who we are</a></li>
-                                <li><a class="dropdown-item" href="#">Meet the team</a></li>
-                                <li><a class="dropdown-item" href="#">Constitution</a></li>
+                                <li><a class="dropdown-item" href="../About/">Who we are</a></li>
+                                <li><a class="dropdown-item" href="../riotsocteam/">Meet the team</a></li>
+                                <li><a class="dropdown-item" href="https://cdn.discordapp.com/attachments/1050317772703416381/1203656655636664320/UNSW_Riot_Games_Society_Constitution_2.pdf?ex=68383e9d&is=6836ed1d&hm=542e1dce4906fa0cc08ee8a784a719725a3d9bbd0abdd321811f8c8ebf6d91a5&">Constitution</a></li>
                             </ul>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="goo">Events</a>
+                            <a class="nav-link" href="../Events/">Events</a>
                             </li>
                             <li class="nav-item">
-                            <a class="nav-link" href="#">Sponsors</a>
+                            <a class="nav-link" href="../Sponsors/">Sponsors</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">FAQ</a>
+                                <a class="nav-link" href="../faq/">FAQ</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
-        <img class="side-img side-img-right" src="../Images/Jett_Artwork_Full.png">
-        <img class="side-img side-img-left" src="../Images/nocturne.png">
+        <img class="side-img side-img-right" src="../Images/home/Jett_Artwork_Full.png">
+        <img class="side-img side-img-left" src="../Images/home/nocturne.png">
         <div class="content-container">
             <div class="intro-img">
                 <div class="overlay"></div>
@@ -75,16 +78,15 @@
             </div>
             
             <p style="padding-top: 3rem; font-family: UniSansHeavy;">
-                We're a fun and welcoming environment for all students that are interested in or play any of Riot’s games. 
-                Whether you’re new, a casual player or a veteran, we’ll have an event for you! <br> <br>
+                We're the hub at UNSW for anyone interested in Riot’s games.  <br> 
 
                 
                 
             </p>
-            <h2 style="font-family: UniSansHeavy;">Are you looking for awesome and friendly people to play with?</h2> <br> 
-            <p style="font-family: UniSansHeavy;">
-                Our community is extremely active and welcoming, and our events are a great place to hang out and meet fellow Riot gamers.
-                We run a range of casual and competitive events including trivia night, aram tournaments and our gaming weeklies! 
+            <h2 style="font-family: UniSansHeavy;">Are you looking for people to play with?</h2> <br> 
+            <p style="font-family: DMSans; margin-top: -1.5rem;">
+                Our community is extremely active and welcoming with all our events open to everyone (even if you're non-UNSW!).
+                We often run a range of casual and competitive events including trivia night, ARAM tournaments and weekly gaming sessions! 
                 
                 <br> <br>Be sure to join our discord server for all the latest updates!
             </p>
@@ -95,7 +97,7 @@
                     <div id=flip>
                         <div class="container1">
                             <div class="game">
-                                <img class="scrolllogo" src="../Images/lollogo1-01.png">
+                                <img class="scrolllogo" src="../Images/game-logos/lollogo1-01.png">
                             </div>
                             <div class="title">
                                 LOL
@@ -103,7 +105,7 @@
                         </div>
                         <div class="container1">
                             <div class="game">
-                                <img class="scrolllogo" src="../Images/Valorantlogo-01.png">
+                                <img class="scrolllogo" src="../Images/game-logos/Valorantlogo-01.png">
                             </div>
                             <div class="title">
                                 Val
@@ -111,7 +113,7 @@
                         </div>
                         <div class="container1">
                             <div class="game">
-                                <img class="scrolllogo" src="../Images/tftlogo-01.png">
+                                <img class="scrolllogo" src="../Images/game-logos/tftlogo-01.png">
                             </div>
                             <div class="title">
                                 TFT
@@ -121,8 +123,8 @@
                     
                 </div>
                 <div id="discordcalltoaction">
-                    <p>Click to join our discord 
-                        <a target="_blank" href="https://discord.com/invite/unswriotsoc"><img class="logo" src="../Images/discord-logo.png"></a>
+                    <p>Click to join our <br>discord 
+                        <a target="_blank" href="https://discord.com/invite/unswriotsoc"><img class="logo" src="../Images/social-logos/discord-logo.png"></a>
                     </p>
                     
                 </div>
@@ -132,38 +134,19 @@
                 <h1>Connect with our community</h1>
                 <div class="social-links-container"> <!--container of the social media links-->
                     <div class="sociallinks">
-                        <a href="https://www.facebook.com/UNSWRiotSoc/" target="_blank"><img src="../Images/fblogo-01.png"></a>
-                        <a href="https://www.instagram.com/unswriotsoc/" target="_blank"><img src="../Images/instalogo.png"></a>
-                        <a target="_blank" href="https://www.tiktok.com/@unsw_riotsoc"><img src="../Images/tiktoklogo.png"></a>
-                        <a href="https://www.youtube.com/@unswriotsoc" target="_blank"><img src="../Images/ytlogo.png"></a>
-                        <a target="_blank" href="https://www.twitch.tv/unswriotsoc"><img src="../Images/twitch.png"></a>
+                        <a href="https://www.facebook.com/UNSWRiotSoc/" target="_blank"><img src="../Images/social-logos/fblogo-01.png"></a>
+                        <a href="https://www.instagram.com/unswriotsoc/" target="_blank"><img src="../Images/social-logos/instalogo.png"></a>
+                        <a target="_blank" href="https://www.tiktok.com/@unsw_riotsoc"><img src="../Images/social-logos/tiktoklogo.png"></a>
+                        <a href="https://www.youtube.com/@unswriotsoc" target="_blank"><img src="../Images/social-logos/ytlogo.png"></a>
+                        <a target="_blank" href="https://www.twitch.tv/unswriotsoc"><img src="../Images/social-logos/twitch.png"></a>
                     </div>
                 </div>
                 <h4>Enquiries: unswriotsoc@gmail.com</h4> <!--text for footer with contact information & acknowledgements-->
                 <p>RiotSoc UNSW is an independent, student-run fan society that is not affiliated with, endorsed by, or sponsored by Riot Games, Inc.
-All trademarks, game titles, logos, and ../Images used on this site or in our promotional material are the property of Riot Games, Inc. and are used here for fan purposes only.</p>
-                <p>Developed and maintained by Tim</p>
+All trademarks, game titles, logos, and images used on this site or in our promotional material are the property of Riot Games, Inc. and are used here for fan purposes only.</p>
+                <p>Developed and maintained by Tim with media provided by Riotsoc Media team</p>
             </footer>
         </div>
-
-
-
-<!--         <div class="insta">
-            <behold-widget feed-id="5HpFG00QfcmYGQl1n9Ey"></behold-widget>
-        </div>
-        <script>
-          (() => {
-            const d=document,s=d.createElement("script");s.type="module";
-            s.src="https://w.behold.so/widget.js";d.head.append(s);
-          })(); 
-        </script>-->
-        <noscript>
-            <p>Events do not load unless JS is enabled</p>
-        </noscript>
-
-
-
-
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

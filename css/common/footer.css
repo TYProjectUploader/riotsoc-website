@@ -1,0 +1,20 @@
+/* footer */
+
+footer {
+    text-align: center;
+    font-size: 0.5em;
+}
+.social-links-container {
+    padding-bottom: 1rem;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: space-around; 
+
+    
+}
+.sociallinks img{ /*sets size of the social media logos*/
+    padding: 0px 10px;
+    height: 35px;
+    flex: 1;
+}
+

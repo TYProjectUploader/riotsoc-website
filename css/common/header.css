@@ -1,0 +1,55 @@
+/* HEader */
+.logocontainer{
+    display:flex;
+    align-items: center;
+    text-decoration: none;
+    color:black;
+    height: 45px;
+    width:170px;
+    gap: 8px;
+    font-size: 1.5em;
+    white-space: nowrap; /* prevents wrap from unsw and riotsoc */
+}
+.logo {
+    width: 45px;
+}
+
+.nav-bar-links a:hover{
+    color: rgb(52, 59, 61);
+    text-shadow: 2px 2px 2px grey;
+    transition: all 0.2s;
+}
+
+.nav-bar-style{
+    background-color: #D7D9DB; /* maybe white instead */
+    font-family: 'UniSansHeavy',sans-serif;
+}
+
+/* Drop down hover only on devices that aren't touch based */
+/* @media (hover: hover) and (pointer: fine) {
+    .navbar .dropdown:hover .dropdown-menu,
+    .navbar .dropdown-menu:hover {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+  
+    .dropdown-menu {
+      display: none;
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      margin-top: 0.125rem; 
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+} */
+
+.dropdown-menu {
+    margin-top: 0 !important; /* overrrides bootstrap's default margine of 0.125rem */
+}
+@media (hover: hover) and (pointer: fine) {
+    .navbar .dropdown:hover > .dropdown-menu{
+      display: block;
+    }
+} 
