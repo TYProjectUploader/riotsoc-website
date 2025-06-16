@@ -30,7 +30,7 @@
 .divider-heading h2 {
     font-size: 2rem;
     padding-top: 12px; /* goofy valorant font not centered */
-    white-space: wrap;
+    text-wrap: balance;
 }
 
 
