@@ -1,11 +1,13 @@
 
 .side-img-right {
   height: 110%;
-  transform: translate(-50%, -35%) translateX(650px); 
+  transform: translate(-50%, -35%); 
+  margin-left: 650px;
 }
 .side-img-left {
   height: 90%;
-  transform: translate(-50%, -35%) translateX(-1100px); 
+  transform: translate(-50%, -35%); 
+  margin-left: -830px;
 }
 
 
