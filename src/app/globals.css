@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "VALORANT";
+  src: url("/fonts/VALORANT-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "UniSansHeavy";
+  src: url("/fonts/UniSansHeavyCAPS.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/DMSans_18pt-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme inline {
+  --font-valorant: "VALORANT", sans-serif;
+  --font-uni-sans: "UniSansHeavy", sans-serif;
+  --font-dm-sans: "DMSans", sans-serif;
+  --color-riotsoc-bg: #0f1923;
+  --color-nav-bg: #d7d9db;
+}
+
+body {
+  background-color: #0f1923;
+  color: white;
+  font-family: "VALORANT", sans-serif;
+}
+
+@keyframes game-flip {
+  0%,
+  100% {
+    transform: translateY(-6em);
+  }
+  5%,
+  33% {
+    transform: translateY(-4em);
+  }
+  38%,
+  66% {
+    transform: translateY(-2em);
+  }
+  71%,
+  99.99% {
+    transform: translateY(0);
+  }
+}
+
+.animate-game-flip {
+  animation: game-flip 5s linear infinite;
+}
+
+/* Desktop only: About submenu on hover (overrides Tailwind hidden) */
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) {
+  .about-dropdown:hover .about-dropdown-menu,
+  .about-dropdown-menu:hover {
+    display: flex !important;
+  }
+}
+
