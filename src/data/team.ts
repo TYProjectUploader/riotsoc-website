@@ -24,8 +24,6 @@ export type TeamYearData = {
 
 export const CURRENT_TEAM_YEAR = 2026;
 
-const PLACEHOLDER_AVATAR = "/Images/riotsocteam/placeholder-avatar.svg";
-
 export const teamByYear: TeamYearData[] = [
   {
     year: 2026,
