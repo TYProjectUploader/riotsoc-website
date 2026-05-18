@@ -62,7 +62,7 @@ export default function Footer() {
         here for fan purposes only.
       </p>
       <p className="mt-1 text-xs leading-relaxed">
-        Developed and maintained by IT team with media provided by Riotsoc Media
+        Developed and maintained by Tim with media provided by Riotsoc Media
         team
       </p>
     </footer>

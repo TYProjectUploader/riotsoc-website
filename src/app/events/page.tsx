@@ -32,7 +32,7 @@ export default function EventsPage() {
       </p>
 
       <DividerHeading>Weekly Events</DividerHeading>
-      <h3>Social Sessions</h3>
+      <h3 className="text-2xl">Social Sessions</h3>
       <p className="font-[family-name:var(--font-dm-sans)]">
         These are weekly chill hangout sessions with fellow riotsoc members
         during the term where we typically play board games and such. <br />
@@ -50,7 +50,7 @@ export default function EventsPage() {
       </div>
 
       <div className="mt-8" />
-      <h3>Gaming Weeklies</h3>
+      <h3 className="text-2xl">Gaming Weeklies</h3>
       <p className="font-[family-name:var(--font-dm-sans)]">
         These are gaming sessions that run throughout the term, check discord
         for latest updates.
