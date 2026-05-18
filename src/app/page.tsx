@@ -14,16 +14,16 @@ export default function HomePage() {
     <PageLayoutWithFooter>
       <IntroHero />
 
-      <p className="pt-12 font-[family-name:var(--font-uni-sans)]">
+      <p className="text-xl pt-12 font-[family-name:var(--font-uni-sans)]">
         We&apos;re the hub at UNSW for anyone interested in Riot&apos;s games.{" "}
         <br />
       </p>
 
-      <h2 className="font-[family-name:var(--font-uni-sans)]">
+      <h2 className="text-3xl font-[family-name:var(--font-uni-sans)]">
         Are you looking for people to play with?
       </h2>
       <br />
-      <p className="-mt-6 font-[family-name:var(--font-dm-sans)]">
+      <p className="font-[family-name:var(--font-dm-sans)]">
         Our community is extremely active and welcoming with all our events open
         to everyone (even if you&apos;re non-UNSW!). We often run a range of
         casual and competitive events including trivia night, ARAM tournaments

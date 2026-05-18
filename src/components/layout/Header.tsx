@@ -30,7 +30,7 @@ const dropdownLinkClass = `block text-black no-underline transition-colors durat
 
 const mobileNavLinkClass = `block text-black no-underline transition-colors duration-150 ${mobileMenuInset} max-lg:py-1.5 lg:px-3 lg:py-2 ${desktopNavHover}`;
 
-const aboutButtonClass = `flex w-full items-center justify-between gap-1 text-left text-black transition-colors duration-150 ${mobileMenuInset} max-lg:py-1.5 lg:w-auto lg:justify-start lg:px-3 lg:py-2 ${desktopNavHover}`;
+const aboutButtonClass = `flex w-full items-center text-left text-black transition-colors duration-150 ${mobileMenuInset} max-lg:py-1.5 lg:w-auto lg:px-3 lg:py-2 ${desktopNavHover}`;
 
 export default function Header() {
   const pathname = usePathname();
@@ -110,12 +110,22 @@ export default function Header() {
                       aria-expanded={aboutOpen}
                       onClick={toggleAbout}
                     >
-                      About us
-                      <span
-                        className={`text-xs transition-transform duration-200 ${aboutOpen ? "rotate-180" : ""} lg:rotate-0`}
-                        aria-hidden
-                      >
-                        ▾
+                      <span className="flex w-full items-center justify-between leading-none lg:w-auto lg:justify-start">
+                        <span className="flex h-[1em] items-center">
+                          About us
+                        </span>
+                        <span
+                          aria-hidden
+                          className="grid h-[1em] w-[1em] shrink-0 place-items-center mb-1"
+                        >
+                          <svg
+                            className="size-[0.8em]"
+                            viewBox="0 0 12 12"
+                            fill="currentColor"
+                          >
+                            <path d="M3 4h6L6 8.5 3 4Z" />
+                          </svg>
+                        </span>
                       </span>
                     </button>
                     <ul
