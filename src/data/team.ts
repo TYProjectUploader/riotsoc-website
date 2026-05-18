@@ -84,13 +84,13 @@ export const teamByYear: TeamYearData[] = [
         role: "Production Director",
         name: "Dedrick Zheng",
         handle: "@Drink",
-        imageSrc: PLACEHOLDER_AVATAR,
+        imageSrc: "/Images/riotsocteam/2026/Dedrick.png",
       },
       {
         role: "IT Director",
         name: "Tim Yang",
         handle: "@Zef",
-        imageSrc: PLACEHOLDER_AVATAR,
+        imageSrc: "/Images/riotsocteam/2026/Tim.png",
       },
     ],
     eventsTeam: [
