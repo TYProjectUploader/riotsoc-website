@@ -118,7 +118,7 @@ export const teamByYear: TeamYearData[] = [
     ],
     productionTeam: [
       { name: "Leo Hewett", handle: "@komandok" },
-      { name: "Ling Zhu", handle: "@asiansensation000" },
+      { name: "Ling Zhu", handle: "@asiansensation" },
       { name: "Michael Xue", handle: "@conquestm" },
       { name: "Raymond Dang", handle: "@rayomnd" },
       { name: "Kai Nguyen", handle: "@GothKaiser" },
