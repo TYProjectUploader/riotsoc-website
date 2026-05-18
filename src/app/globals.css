@@ -40,25 +40,27 @@ body {
 
 @keyframes game-flip {
   0%,
+  21% {
+    transform: translate3d(0, 0, 0);
+  }
+  24%,
+  46% {
+    transform: translate3d(0, -25%, 0);
+  }
+  49%,
+  71% {
+    transform: translate3d(0, -50%, 0);
+  }
+  74%,
   100% {
-    transform: translateY(-6em);
-  }
-  5%,
-  33% {
-    transform: translateY(-4em);
-  }
-  38%,
-  66% {
-    transform: translateY(-2em);
-  }
-  71%,
-  99.99% {
-    transform: translateY(0);
+    transform: translate3d(0, -75%, 0);
   }
 }
 
 .animate-game-flip {
-  animation: game-flip 5s linear infinite;
+  animation: game-flip 6s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
 }
 
 /* Desktop only: About submenu on hover (overrides Tailwind hidden) */

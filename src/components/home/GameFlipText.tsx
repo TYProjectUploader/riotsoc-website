@@ -18,57 +18,57 @@ const games = [
   },
 ];
 
+const flipSlides = [...games, games[0]];
+
 export default function GameFlipText() {
   return (
-    <div className="flex flex-col gap-6 text-[1.5em] lg:flex-row lg:flex-wrap lg:items-end lg:justify-between lg:gap-x-8">
-      <div className="w-full max-w-full text-left text-[2em] font-bold uppercase lg:flex-1">
-        <p className="m-0 leading-snug">
-          <span className="block lg:inline lg:whitespace-normal">
-            Join us for{" "}
-          </span>
-          <span className="mt-1 inline-block h-[2em] w-full max-w-full align-bottom [overflow-x:visible] [overflow-y:hidden] lg:mt-0 lg:w-auto lg:max-w-none">
-            <span className="block animate-game-flip">
-              {games.map((game) => (
+    <div className="text-[1.5em]">
+      <p className="m-0 text-left text-[2em] font-bold uppercase leading-snug">
+        Join us for
+      </p>
+      <div className="mt-1 grid grid-cols-[1fr_auto] items-end gap-x-4 gap-y-2 sm:gap-x-8">
+        <div className="min-w-0 text-left text-[2em] font-bold uppercase">
+          <div className="h-[2.25em] w-full max-w-full translate-z-0 overflow-hidden">
+            <span className="flex flex-col animate-game-flip">
+              {flipSlides.map((game, index) => (
                 <span
-                  key={game.title}
-                  className="box-border block h-[2em] w-max max-w-full pl-[15%] pr-3 text-white lg:pr-4"
+                  key={`${game.title}-${index}`}
+                  className="flex h-[2.25em] w-max max-w-full shrink-0 items-center gap-2 pr-1 text-white"
                 >
-                  <span className="inline-block h-full align-middle">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={game.logo}
-                      alt={game.alt}
-                      className="inline h-full align-middle"
-                    />
-                  </span>{" "}
-                  <span className="inline-block h-full align-middle text-[1.4em]">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={game.logo}
+                    alt={game.alt}
+                    className="h-[1.75em] w-auto shrink-0 object-contain"
+                  />
+                  <span className="shrink-0 text-[1.4em] leading-none">
                     {game.title}
                   </span>
                 </span>
               ))}
             </span>
-          </span>
-        </p>
-      </div>
-      <div className="w-full max-w-full text-left lg:w-auto lg:max-w-[min(100%,18rem)] lg:flex-none lg:text-right">
-        <p className="m-0 leading-snug">
-          Click to join our <br />
-          discord{" "}
-          <a
-            href="https://discord.com/invite/unswriotsoc"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block align-middle"
-          >
-            <Image
-              src="/Images/social-logos/discord-logo.png"
-              alt="Discord"
-              width={45}
-              height={45}
-              className="inline h-[45px] w-[45px] align-middle"
-            />
-          </a>
-        </p>
+          </div>
+        </div>
+        <div className="shrink-0 text-right text-[1.2em]">
+          <p className="m-0 leading-snug">
+            Click to join our <br />
+            discord{" "}
+            <a
+              href="https://discord.com/invite/unswriotsoc"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block align-middle"
+            >
+              <Image
+                src="/Images/social-logos/discord-logo.png"
+                alt="Discord"
+                width={45}
+                height={45}
+                className="inline h-[45px] w-[45px] align-middle"
+              />
+            </a>
+          </p>
+        </div>
       </div>
     </div>
   );
