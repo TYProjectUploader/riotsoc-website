@@ -24,6 +24,8 @@ export type TeamYearData = {
 
 export const CURRENT_TEAM_YEAR = 2026;
 
+const PLACEHOLDER_AVATAR = "/Images/riotsocteam/placeholder-avatar.svg";
+
 export const teamByYear: TeamYearData[] = [
   {
     year: 2026,
@@ -82,13 +84,13 @@ export const teamByYear: TeamYearData[] = [
         role: "Production Director",
         name: "Dedrick Zheng",
         handle: "@Drink",
-        imageSrc: "/Images/riotsocteam/2026/Dedrick.png",
+        imageSrc: PLACEHOLDER_AVATAR,
       },
       {
         role: "IT Director",
         name: "Tim Yang",
         handle: "@Zef",
-        imageSrc: "/Images/riotsocteam/2026/Tim.png",
+        imageSrc: PLACEHOLDER_AVATAR,
       },
     ],
     eventsTeam: [
