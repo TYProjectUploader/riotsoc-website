@@ -10,6 +10,7 @@ const CONSTITUTION_URL =
 
 const navLinks = [
   { href: "/events", label: "Events" },
+  { href: "/schedule", label: "Schedule" },
   { href: "/sponsors", label: "Sponsors" },
   { href: "/faq", label: "FAQ" },
 ];

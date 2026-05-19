@@ -9,7 +9,7 @@ export const faqItems: FaqItem[] = [
   {
     question: "Q. When are events happening?",
     answer:
-      "Weekly we have sessions of Valorant and League of legends from week 1 up to flex week. Outside of that, we have a bunch of social events that happen every 2-3weeks which you can find on the events tab!",
+      "Weekly we have sessions of Valorant and League of legends throughout the term. Outside of that, we have a bunch of social events that happen every 2-3weeks — see the Events page for weeklies and the Schedule page for one-off society events!",
   },
   {
     question: "Q. How do I come to events?",
@@ -17,7 +17,7 @@ export const faqItems: FaqItem[] = [
       <>
         Details for each event can be found primarily through our discord.{" "}
         <br />
-        You can also hover over the images in upcoming events on the events tab.
+        You can also browse upcoming events on the Schedule tab.
       </>
     ),
   },
