@@ -18,7 +18,7 @@ export default function ScheduleContent() {
     const fetchSocietyData = async () => {
       const url = "https://api.hellorubric.com/";
       const detailsObj = {
-        societyid: "12717",
+        societyid: "6335",
         domain: "campus.hellorubric.com",
       };
 
