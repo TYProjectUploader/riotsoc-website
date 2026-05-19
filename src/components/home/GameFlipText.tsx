@@ -22,11 +22,12 @@ const flipSlides = [...games, games[0]];
 
 export default function GameFlipText() {
   return (
-    <div className="text-[1.5em]">
-      <p className="m-0 text-left text-[2em] font-bold uppercase leading-snug">
-        Join us for
-      </p>
-      <div className="mt-1 grid grid-cols-[1fr_auto] items-end gap-x-4 gap-y-2 sm:gap-x-8">
+    <div className="@container flex flex-col gap-4 text-[1.5em] @min-[34rem]:flex-row @min-[34rem]:items-start @min-[34rem]:justify-between @min-[34rem]:gap-x-4 @min-[34rem]:gap-y-0">
+      <div className="flex min-w-0 flex-col">
+        <p className="m-0 text-left text-[2em] font-bold uppercase leading-snug">
+          Join us for
+        </p>
+
         <div className="min-w-0 text-left text-[2em] font-bold uppercase">
           <div className="h-[2.25em] w-full max-w-full translate-z-0 overflow-hidden">
             <span className="flex flex-col animate-game-flip">
@@ -49,26 +50,29 @@ export default function GameFlipText() {
             </span>
           </div>
         </div>
-        <div className="shrink-0 text-right text-[1.2em]">
-          <p className="m-0 leading-snug">
-            Click to join our <br />
-            discord{" "}
-            <a
-              href="https://discord.com/invite/unswriotsoc"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block align-middle"
-            >
-              <Image
-                src="/Images/social-logos/discord-logo.png"
-                alt="Discord"
-                width={45}
-                height={45}
-                className="inline h-[45px] w-[45px] align-middle"
-              />
-            </a>
-          </p>
-        </div>
+      </div>
+      <div className="shrink-0 text-left text-[1.2em] @min-[34rem]:text-right">
+        <p className="m-0 leading-snug">
+          Click to join our{" "}
+          <span className="@min-[34rem]:hidden">
+            <br />
+          </span>
+          discord{" "}
+          <a
+            href="https://discord.com/invite/unswriotsoc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block align-middle"
+          >
+            <Image
+              src="/Images/social-logos/discord-logo.png"
+              alt="Discord"
+              width={45}
+              height={45}
+              className="inline h-[45px] w-[45px] align-middle"
+            />
+          </a>
+        </p>
       </div>
     </div>
   );
