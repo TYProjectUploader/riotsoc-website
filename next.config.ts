@@ -13,8 +13,7 @@ const nextConfig: NextConfig = {
         hostname: "portal.getqpay.com",
         pathname: "/**",
       },
-    ],
-  },
+    ],  },
 };
 
 export default nextConfig;
